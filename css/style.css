@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+	font-family: Roboto;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+  width: 100vw;
+  min-width: 360px;
+  height: 100vh;
+	min-height: 100%;
+}
+
+header {
+  width: inherit;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+	background: #ddd;
+}
+
+h1 {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+main {
+	display: flex;
+	flex: 2;
+}
+
+section, aside {
+	min-height: 100px;
+}
+
+section {
+	flex: 2;
+	background: #444;
+	padding: 20px;
+}
+
+aside {
+	flex: 1;
+	background: #aaa;
+	padding: 20px;
+}
+
+aside button {
+	font-family: Roboto;
+	border-radius: 2px;
+	border: 0;
+	padding: 5px 10px;
+	display: block;
+	margin-bottom: 10px;
+	background: #ddd;
+}
+
+.info {
+	background: red;
+	width: 200px;
+	height: 20px;
+	margin: 0 auto 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info .score,
+.info .speed {
+	display: inline-block;
+}
+
+.game {
+	background: green;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+footer {
+	background: #888;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
