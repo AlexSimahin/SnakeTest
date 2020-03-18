@@ -192,16 +192,24 @@ footer {
     flex-direction: column; }
 
   section {
+    width: 100%;
     flex: none;
     padding: 0; }
+
+  .game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
   aside {
     flex: none;
     padding: 0; }
 
   .info {
+    width: 100%;
+    justify-content: space-evenly;
     margin: 0;
-    padding: 20px; }
+    padding: 20px 0; }
 
   footer {
     width: inherit; }
