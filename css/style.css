@@ -176,7 +176,8 @@ footer {
   .cell.snake {
     background: var(--blue); }
   .cell.food {
-    background: var(--red); }
+    /*background: var(--red);*/
+    background: url(../img/fruit.svg) no-repeat; }
 
 @media (max-width: 600px) {
   * {
@@ -226,7 +227,7 @@ footer {
     margin: 0;
     padding: 20px 0; }
 
-  .game {
+  .game, .play, .pause {
     display: flex;
     justify-content: center;
     margin: 0; }

@@ -226,7 +226,8 @@ footer {
   }
 
   &.food {
-    background: var(--red);
+    /*background: var(--red);*/
+    background: url(../img/fruit.svg) no-repeat;
   }
 }
 
