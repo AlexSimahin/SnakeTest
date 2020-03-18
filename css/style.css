@@ -120,6 +120,9 @@ aside button:active {
   padding: 20px;
   background: var(--green); }
 
+.mob-controller {
+  display: none; }
+
 footer {
   background: #fff;
   padding: 20px;
@@ -181,6 +184,10 @@ footer {
     margin: 0;
     box-sizing: border-box; }
 
+  .wrapper {
+    align-items: center;
+    margin: 0; }
+
   header {
     height: 40px; }
 
@@ -189,6 +196,7 @@ footer {
     font-size: 150%; }
 
   main {
+    width: 100%;
     flex-direction: column; }
 
   section {
@@ -199,11 +207,18 @@ footer {
   .game-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    justify-content: center; }
 
   aside {
     flex: none;
-    padding: 0; }
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 60px;
+    min-height: 60px; }
+
+  aside button.new {
+    margin: 0; }
 
   .info {
     width: 100%;
@@ -211,19 +226,49 @@ footer {
     margin: 0;
     padding: 20px 0; }
 
+  .game {
+    display: flex;
+    justify-content: center;
+    margin: 0; }
+
+  .mob-controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white; }
+
+  .touch-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background-color: #f6e3b5; }
+
   footer {
-    width: inherit; }
+    width: 100%;
+    padding: 5px 20px;
+    justify-content: space-around;
+    border-top: 0.25px solid #afafaf; }
 
   .copyright {
+    width: 32%;
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
     font-size: 12px; }
 
   .copyright a {
     margin-left: 0px; }
 
   .year-copyright {
-    padding-top: 5px; } }
+    padding-top: 5px; }
+
+  .share {
+    width: 55%; }
+
+  .share a {
+    margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
