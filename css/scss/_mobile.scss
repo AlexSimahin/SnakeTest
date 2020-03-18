@@ -1,0 +1,55 @@
+@media (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    height: 40px;
+  }
+
+  h1 {
+    padding: 5px;
+    font-size: 150%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    flex: none;
+    padding: 0;
+  }
+
+  aside {
+    flex: none;
+    padding: 0;
+  }
+
+  .info {
+    margin: 0;
+    padding: 20px;
+  }
+
+  footer {
+    width: inherit;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .copyright a {
+  	margin-left: 0px;
+  }
+
+  .year-copyright {
+    padding-top: 5px;
+  }
+
+}
