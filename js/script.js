@@ -211,7 +211,6 @@ function moveSnake() {
 // поедание еды
 function eatFood() {
   score = score + config.foodScore;
-  snake.push(food);
   food = [];
   createFood();
   scoreEl.innerHTML = score;
