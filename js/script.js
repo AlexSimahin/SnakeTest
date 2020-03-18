@@ -41,6 +41,7 @@ let snakeDirection = "right"; // "up" | "right" | "down" | "left"
 let snakeChunksDirections = [];
 let tickId = null;
 let currentStepDuration = config.stepDuration;
+let appleEated = 0;
 
 // елементы DOM-дерева
 const gameEl = document.getElementById("game");
@@ -210,6 +211,7 @@ function moveSnake() {
 // поедание еды
 function eatFood() {
   score = score + config.foodScore;
+  snake.push(food);
   food = [];
   createFood();
   scoreEl.innerHTML = score;
@@ -223,6 +225,20 @@ function eatFood() {
     tick();
   }
 }
+
+/*// Grow Snake
+function snakeGrow() {
+  const newSnake = snake.slice().reverse();
+  console.log(newSnake);
+
+  const initialY = food[1];
+  const initialX = food[0];
+  newSnake.push([initialX, initialY]);
+
+  console.log(initialY, initialX);
+  snake = newSnake.slice().reverse();
+}*/
+
 
 // проверка на коллизию
 function ifCollision() {
